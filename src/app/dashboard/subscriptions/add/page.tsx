@@ -119,7 +119,7 @@ export default function AddSubscriptionPage() {
                     category: service.category,
                   })
                 }
-                className="p-3 border border-gray-200 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition-colors text-sm font-medium text-gray-700"
+                className="p-3 border border-gray-200 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition-colors text-sm font-semibold text-gray-900"
               >
                 {service.name}
               </button>
@@ -138,7 +138,7 @@ export default function AddSubscriptionPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="md:col-span-2">
-                <label htmlFor="service_name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="service_name" className="block text-sm font-semibold text-gray-900 mb-2">
                   Service Name <span className="text-red-600">*</span>
                 </label>
                 <Input
@@ -153,7 +153,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="plan_name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="plan_name" className="block text-sm font-semibold text-gray-900 mb-2">
                   Plan Name
                 </label>
                 <Input
@@ -167,7 +167,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="category" className="block text-sm font-semibold text-gray-900 mb-2">
                   Category
                 </label>
                 <select
@@ -175,7 +175,7 @@ export default function AddSubscriptionPage() {
                   name="category"
                   value={formData.category}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-500 text-gray-900 font-medium bg-white"
                 >
                   <option value="">Select category</option>
                   <option value="Entertainment">Entertainment</option>
@@ -191,7 +191,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="price" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="price" className="block text-sm font-semibold text-gray-900 mb-2">
                   Price <span className="text-red-600">*</span>
                 </label>
                 <Input
@@ -208,7 +208,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="currency" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="currency" className="block text-sm font-semibold text-gray-900 mb-2">
                   Currency
                 </label>
                 <select
@@ -216,7 +216,7 @@ export default function AddSubscriptionPage() {
                   name="currency"
                   value={formData.currency}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-500 text-gray-900 font-medium bg-white"
                 >
                   <option value="USD">USD ($)</option>
                   <option value="EUR">EUR (€)</option>
@@ -227,7 +227,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="cadence" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="cadence" className="block text-sm font-semibold text-gray-900 mb-2">
                   Billing Period <span className="text-red-600">*</span>
                 </label>
                 <select
@@ -235,7 +235,7 @@ export default function AddSubscriptionPage() {
                   name="cadence"
                   value={formData.cadence}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-500 text-gray-900 font-medium bg-white"
                   required
                 >
                   <option value="daily">Daily</option>
@@ -247,7 +247,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div>
-                <label htmlFor="next_bill_date" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="next_bill_date" className="block text-sm font-semibold text-gray-900 mb-2">
                   Next Billing Date <span className="text-red-600">*</span>
                 </label>
                 <Input
@@ -262,7 +262,7 @@ export default function AddSubscriptionPage() {
               </div>
 
               <div className="md:col-span-2">
-                <label htmlFor="notes" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="notes" className="block text-sm font-semibold text-gray-900 mb-2">
                   Notes
                 </label>
                 <textarea
@@ -272,7 +272,7 @@ export default function AddSubscriptionPage() {
                   placeholder="Add any notes about this subscription..."
                   value={formData.notes}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-500 text-gray-900 font-medium placeholder:text-gray-400 bg-white"
                 />
               </div>
             </div>

@@ -81,7 +81,7 @@ export default function SignupPage() {
           <CardContent>
             <form onSubmit={handleEmailSignup} className="space-y-4">
               <div>
-                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="fullName" className="block text-sm font-semibold text-gray-900 mb-2">
                   Full Name
                 </label>
                 <Input
@@ -95,7 +95,7 @@ export default function SignupPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
                   Email
                 </label>
                 <Input
@@ -109,7 +109,7 @@ export default function SignupPage() {
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="password" className="block text-sm font-semibold text-gray-900 mb-2">
                   Password
                 </label>
                 <Input
